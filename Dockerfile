@@ -12,12 +12,12 @@ ENV PYTHON_PIP_VERSION="9.0.1"
 # Confluent
 ENV SCALA_VERSION="2.11"
 ENV CONFLUENT_MAJOR_VERSION="3"
-ENV CONFLUENT_MINOR_VERSION="2"
+ENV CONFLUENT_MINOR_VERSION="3"
 
-ENV CONFLUENT_PATCH_VERSION="2"
+ENV CONFLUENT_PATCH_VERSION="0"
 ENV CONFLUENT_VERSION="$CONFLUENT_MAJOR_VERSION.$CONFLUENT_MINOR_VERSION.$CONFLUENT_PATCH_VERSION"
 
-ENV KAFKA_VERSION="0.10.2.1"
+ENV KAFKA_VERSION="0.11.0.0"
 
 # This affects how strings in Java class files are interpreted.  
 # We want UTF-8 and this is the only locale in the base image that supports it
@@ -35,7 +35,7 @@ RUN echo "===> Updating debian ....." \
     && echo "===> Adding confluent repository...${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION}" \
     && if [ "x$APT_ALLOW_UNAUTHENTICATED" = "xtrue" ]; then echo "APT::Get::AllowUnauthenticated \"true\";" > /etc/apt/apt.conf.d/allow_unauthenticated; else curl -L ${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION}/archive.key | apt-key add - ; fi \
     && echo "deb [arch=amd64] ${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION} stable main" >> /etc/apt/sources.list \
-    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.2.x/debian/base/include/cub" -O "/usr/local/bin/cub" \
+    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.3.x-quickstart-fix/debian/base/include/cub" -O "/usr/local/bin/cub" \
     && echo "9450d1f4c85ce1f9de5bf3c5ffdafe6152ab902fb30b128e7a109e7d0e0f90b4" "/usr/local/bin/cub" | sha256sum -c - \
-    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.2.x/debian/base/include/dub" -O "/usr/local/bin/dub" \
+    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.3.x-quickstart-fix/debian/base/include/dub" -O "/usr/local/bin/dub" \
     && echo "c6fd8aac2d97f3edfda79111c09932f302c5aa6cf90bac766964695fbc9db317" "/usr/local/bin/dub" | sha256sum -c -
