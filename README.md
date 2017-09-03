@@ -4,20 +4,8 @@
 
 * ```jesse-slim-8u144-2.11.11-3.2``` _\([jesse-slim-8u144-2.11.11-3.2/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.2.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.2 "")
-* ```stretch-slim-8u144-2.11.11-3.2``` _\([stretch-slim-8u144-2.11.11-3.2/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:stretch-slim-8u144-2.11.11-3.2.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:stretch-slim-8u144-2.11.11-3.2 "")
-* ```jesse-slim-8u144-2.12.3-3.2``` _\([jesse-slim-8u144-2.12.3-3.2/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:jesse-slim-8u144-2.12.3-3.2.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:jesse-slim-8u144-2.12.3-3.2 "")
-* ```stretch-slim-8u144-2.12.3-3.2```, _\([stretch-slim-8u144-2.12.3-3.2/Dockerfile]\)_ 
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:stretch-slim-8u144-2.12.3-3.2.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:stretch-slim-8u144-2.12.3-3.2 "")
 * ```jesse-slim-8u144-2.11.11-3.3``` _\([jesse-slim-8u144-2.11.11-3.3/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.3.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.3 "")
-* ```stretch-slim-8u144-2.11.11-3.3``` _\([stretch-slim-8u144-2.11.11-3.3/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:stretch-slim-8u144-2.11.11-3.3.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:stretch-slim-8u144-2.11.11-3.3 "")
-* ```jesse-slim-8u144-2.12.3-3.3``` _\([jesse-slim-8u144-2.12.3-3.3/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:jesse-slim-8u144-2.12.3-3.3.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:jesse-slim-8u144-2.12.3-3.3 "")
-* ```stretch-slim-8u144-2.12.3-3.3```, _\([stretch-slim-8u144-2.12.3-3.3/Dockerfile]\)_ 
-[![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:stretch-slim-8u144-2.12.3-3.3.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:stretch-slim-8u144-2.12.3-3.3 "")
 
 #### All tag names follow the naming convention:
 
@@ -45,12 +33,6 @@ docker build -t mbe1224/confluent-osp-base .
 * [Oracle Binary Code License Agreement]
 
    [jesse-slim-8u144-2.11.11-3.2/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/jesse-slim-8u144-2.11.11-3.2/Dockerfile>
-   [stretch-slim-8u144-2.11.11-3.2/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/stretch-slim-8u144-2.11.11-3.2/Dockerfile>
-   [jesse-slim-8u144-2.12.3-3.2/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/jesse-slim-8u144-2.12.3-3.2/Dockerfile>
-   [stretch-slim-8u144-2.12.3-3.2/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/stretch-slim-8u144-2.12.3-3.2/Dockerfile>
    [jesse-slim-8u144-2.11.11-3.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/jesse-slim-8u144-2.11.11-3.3/Dockerfile>
-   [stretch-slim-8u144-2.11.11-3.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/stretch-slim-8u144-2.11.11-3.3/Dockerfile>
-   [jesse-slim-8u144-2.12.3-3.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/jesse-slim-8u144-2.12.3-3.3/Dockerfile>
-   [stretch-slim-8u144-2.12.3-3.3/Dockerfile]: <https://github.com/MihaiBogdanEugen/confluent-osp-base/blob/stretch-slim-8u144-2.12.3-3.3/Dockerfile>
    [Apache License]: <https://raw.githubusercontent.com/MihaiBogdanEugen/confluent-osp-base/master/LICENSE>
    [Oracle Binary Code License Agreement]: <https://raw.githubusercontent.com/MihaiBogdanEugen/confluent-osp-base/master/Oracle_Binary_Code_License_Agreement%20for%20the%20Java%20SE%20Platform_Products_and_JavaFX>
