@@ -12,12 +12,12 @@ ENV PYTHON_PIP_VERSION="9.0.1"
 # Confluent
 ENV SCALA_VERSION="2.11"
 ENV CONFLUENT_MAJOR_VERSION="3"
-ENV CONFLUENT_MINOR_VERSION="2"
-ENV CONFLUENT_PATCH_VERSION="2"
+ENV CONFLUENT_MINOR_VERSION="3"
+ENV CONFLUENT_PATCH_VERSION="0"
 ENV CONFLUENT_VERSION="$CONFLUENT_MAJOR_VERSION.$CONFLUENT_MINOR_VERSION.$CONFLUENT_PATCH_VERSION"
-ENV CONFLUENT_DEB_VERSION="2"
+ENV CONFLUENT_DEB_VERSION="1"
 
-ENV KAFKA_VERSION="0.10.2.1"
+ENV KAFKA_VERSION="0.11.0.0"
 
 # This affects how strings in Java class files are interpreted.  
 # We want UTF-8 and this is the only locale in the base image that supports it
@@ -35,7 +35,7 @@ RUN echo "===> Updating debian ....." \
     && echo "===> Adding confluent repository...${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION}" \
     && if [ "x$APT_ALLOW_UNAUTHENTICATED" = "xtrue" ]; then echo "APT::Get::AllowUnauthenticated \"true\";" > /etc/apt/apt.conf.d/allow_unauthenticated; else curl -L ${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION}/archive.key | apt-key add - ; fi \
     && echo "deb [arch=amd64] ${CONFLUENT_DEB_REPO}/deb/${CONFLUENT_MAJOR_VERSION}.${CONFLUENT_MINOR_VERSION} stable main" >> /etc/apt/sources.list \
-    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3c2c457e275a66f327868466dfa000a8ee3c0114/debian/base/include/cub" -O "/usr/local/bin/cub" \
+    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/71fabd107216be2be86aea2b95371cdea4abde95/debian/base/include/cub" -O "/usr/local/bin/cub" \
     && chmod a+x "/usr/local/bin/cub" \
-    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3c2c457e275a66f327868466dfa000a8ee3c0114/debian/base/include/dub" -O "/usr/local/bin/dub" \
+    && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/71fabd107216be2be86aea2b95371cdea4abde95/debian/base/include/dub" -O "/usr/local/bin/dub" \
     && chmod a+x "/usr/local/bin/dub"
