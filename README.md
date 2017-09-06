@@ -7,7 +7,7 @@
 * ```jesse-slim-8u144-2.11.11-3.3.0```, ```latest``` _\([jesse-slim-8u144-2.11.11-3.3.0/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.3.0.svg)](https://microbadger.com/images/mbe1224/confluent-osp-base:jesse-slim-8u144-2.11.11-3.3.0 "")
 
-#### All tag names follow the naming convention: #####
+#### All tag names follow the naming convention: ####
 
 ```debian_image_tag``` + '-' + ```java_version``` + '-' + ```scala_version``` + '-' + ```confluent_platform_version```
 
@@ -31,7 +31,7 @@
 This image was created with the sole purpose of offering the [Confluent Open Source Platform] running on top of [Oracle JDK].
 Therefore, it follows the same structure as the one from the original [repository]. More precisely:
 - tag ```jesse-slim-8u144-2.11.11-3.2.2``` follows branch [3.2.x], and 
-- tags ```jesse-slim-8u144-2.11.11-3.3.0``` and```latest``` follow branch [3.3.x-quickstart-fix]
+- tags ```jesse-slim-8u144-2.11.11-3.3.0``` and```latest``` follow branch [3.3.x]
 
 ### Usage: ###
 
@@ -60,7 +60,7 @@ As for running it, *one shouldn't need to do this directly* - this image is inte
    [Docker utility belt script ('dub')]: <https://raw.githubusercontent.com/confluentinc/cp-docker-images/df0091f5437113d2764cabb7433eee25fba6a4b6/debian/base/include/dub>   
    [repository]: <https://github.com/confluentinc/cp-docker-images>
    [3.2.x]: <https://github.com/confluentinc/cp-docker-images/tree/3.2.x>
-   [3.3.x-quickstart-fix]: <https://github.com/confluentinc/cp-docker-images/tree/3.3.x-quickstart-fix>
+   [3.3.x]: <https://github.com/confluentinc/cp-docker-images/tree/3.3.x>
    [mbe1224/confluent-osp-kafka]: <https://hub.docker.com/r/mbe1224/confluent-osp-kafka/>
    [mbe1224/confluent-osp-rest-proxy]: <https://hub.docker.com/r/mbe1224/confluent-osp-kafka/>
    [mbe1224/confluent-osp-schema-registy]: <https://hub.docker.com/r/mbe1224/confluent-osp-schema-registy/>
