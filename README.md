@@ -16,7 +16,7 @@
 #### Summary: ####
 
 - Debian "slim" image variant
-- Oracle Java SE Development Kit (JDK) 8u144 addded, without MissionControl, VisualVM, JavaFX and JRE
+- Oracle JDK 8u152 addded, without MissionControl, VisualVM, JavaFX, ReadMe files, source archives, etc.
 - Oracle Java Cryptography Extension added
 - Scala 2.11.11 added
 - Python 2.7.9-1 & pip 9.0.1 added
@@ -44,7 +44,7 @@ As for running it, *one shouldn't need to do this directly* - this image is inte
 
 - [mbe1224/docker-confluent-platform-kafka]
 - [mbe1224/docker-confluent-platform-rest-proxy]
-- [mbe1224/docker-confluent-platform-registy]
+- [mbe1224/docker-confluent-platform-registry]
 - [mbe1224/docker-confluent-platform-zookeeper]
 
 ### Dual licensed under: ###
@@ -65,7 +65,7 @@ As for running it, *one shouldn't need to do this directly* - this image is inte
    [3.3.x]: <https://github.com/confluentinc/cp-docker-images/tree/3.3.x-quickstart-fix>
    [mbe1224/docker-confluent-platform-kafka]: <https://hub.docker.com/r/mbe1224/docker-confluent-platform-osp-kafka/>
    [mbe1224/docker-confluent-platform-rest-proxy]: <https://hub.docker.com/r/mbe1224/docker-confluent-platform-osp-kafka/>
-   [mbe1224/docker-confluent-platform-schema-registy]: <https://hub.docker.com/r/mbe1224/docker-confluent-platform-schema-registy/>
+   [mbe1224/docker-confluent-platform-registry]: <https://hub.docker.com/r/mbe1224/docker-confluent-platform-registry/>
    [mbe1224/docker-confluent-platform-zookeeper]: <https://hub.docker.com/r/mbe1224/docker-confluent-platform-zookeeper/>   
    [MIT License]: <https://raw.githubusercontent.com/MihaiBogdanEugen/docker-confluent-platform-base/master/LICENSE>
    [Oracle Binary Code License Agreement]: <https://raw.githubusercontent.com/MihaiBogdanEugen/docker-confluent-platform-base/master/Oracle_Binary_Code_License_Agreement%20for%20the%20Java%20SE%20Platform_Products_and_JavaFX>
