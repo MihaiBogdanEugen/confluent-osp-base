@@ -37,7 +37,7 @@ Therefore, it follows the same structure as the one from the original [repositor
 
 Build the image
 ```shell
-docker build -t mbe1224/cconfluent-platform-base /3.3.0/
+docker build -t mbe1224/confluent-platform-base /3.3.0/
 ```
 
 As for running it, *one shouldn't need to do this directly* - this image is intented to be *extended*. Check out the following images:
