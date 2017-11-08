@@ -1,4 +1,4 @@
-FROM mbe1224/debian-scala:jessie-slim-2.11
+FROM mbe1224/debian-oracle-java:jessie-slim-jdk8
 
 ARG CONFLUENT_DEB_REPO="http://packages.confluent.io"
 ARG APT_ALLOW_UNAUTHENTICATED=false

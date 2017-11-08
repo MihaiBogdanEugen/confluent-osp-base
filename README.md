@@ -1,4 +1,4 @@
-## Docker base image for the [Confluent Open Source Platform] using [Scala] and [Oracle JDK] ##
+## Docker base image for the [Confluent Open Source Platform] using [Oracle JDK] ##
 
 ### Supported tags and respective Dockerfile links: ###
 
@@ -18,10 +18,9 @@
 - Debian "slim" image variant
 - Oracle JDK 8u152 addded, without MissionControl, VisualVM, JavaFX, ReadMe files, source archives, etc.
 - Oracle Java Cryptography Extension added
-- Scala 2.11.11 added
 - Python 2.7.9-1 & pip 9.0.1 added
 - SHA 256 sum checks for all downloads
-- JAVA\_HOME and SCALA\_HOME environment variables set up
+- JAVA\_HOME environment variable set up
 - Utility scripts added:
     - [Confluent utility belt script ('cub')] - a Python CLI for a Confluent tool called [docker-utils]
     - [Docker utility belt script ('dub')]
