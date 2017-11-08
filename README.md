@@ -3,17 +3,13 @@
 ### Supported tags and respective Dockerfile links: ###
 
 * ```3.2.2``` _\([3.2.2/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/docker-confluent-platform-base:3.2.2.svg)](https://microbadger.com/images/mbe1224/docker-confluent-platform-base:3.2.2 "")
+[![](https://images.microbadger.com/badges/image/mbe1224/confluent-platform-base:3.2.2.svg)](https://microbadger.com/images/mbe1224/confluent-platform-base:3.2.2 "")
 * ```3.3.0```, ```latest``` _\([3.3.0/Dockerfile]\)_
-[![](https://images.microbadger.com/badges/image/mbe1224/docker-confluent-platform-base:3.3.0.svg)](https://microbadger.com/images/mbe1224/docker-confluent-platform-base:3.3.0 "")
+[![](https://images.microbadger.com/badges/image/mbe1224/confluent-platform-base:3.3.0.svg)](https://microbadger.com/images/mbe1224/confluent-platform-base:3.3.0 "")
 
-#### All tag names follow the naming convention: #####
+*All tag names follow the naming convention of the [Confluent Open Source Platform]*
 
-```confluent_platform_version```
-
-### About: ### 
-
-#### Summary: ####
+### Summary: ###
 
 - Debian "slim" image variant
 - Oracle JDK 8u152 addded, without MissionControl, VisualVM, JavaFX, ReadMe files, source archives, etc.
@@ -25,7 +21,7 @@
     - [Confluent utility belt script ('cub')] - a Python CLI for a Confluent tool called [docker-utils]
     - [Docker utility belt script ('dub')]
 
-#### More details: ####
+### Details: ###
 
 This image was created with the sole purpose of offering the [Confluent Open Source Platform] running on top of [Oracle JDK].
 Therefore, it follows the same structure as the one from the original [repository]. More precisely:
