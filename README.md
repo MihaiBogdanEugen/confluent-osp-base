@@ -16,7 +16,7 @@
 - Debian "slim" image variant
 - Oracle JDK 8u152 addded, without MissionControl, VisualVM, JavaFX, ReadMe files, source archives, etc.
 - Oracle Java Cryptography Extension added
-- Python 2.7.13-2 & pip 9.0.1 added
+- Python 2.7.9-1 & pip 9.0.1 added
 - SHA 256 sum checks for all downloads
 - JAVA\_HOME environment variable set up
 - Utility scripts added:
